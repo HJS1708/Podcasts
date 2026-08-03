@@ -1,0 +1,13 @@
+{
+  "_comment": "Lieblingspodcasts. 'sprache' steuert die Transkription (de/en); Zusammenfassung immer auf Deutsch. Feld & Haucap (Pioneer) folgt, sobald privater Mitglieder-Feed vorliegt.",
+  "podcasts": [
+    {"key": "pioneer_morning",     "name": "The Pioneer Morning Briefing", "feed": "https://dasmorningbriefing.podigee.io/feed/mp3", "sprache": "de"},
+    {"key": "pioneer_frontrunners","name": "The Pioneer Frontrunners",      "feed": "https://feeds.acast.com/public/shows/7d3e054e-b81e-55e0-8c4d-74027c653416", "sprache": "de"},
+    {"key": "hb_morning",          "name": "Handelsblatt Morning Briefing", "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3", "sprache": "de"},
+    {"key": "hb_trumpwatch",       "name": "Handelsblatt Trump Watch",      "feed": "https://handelsblatt-trump-watch.podigee.io/feed/mp3", "sprache": "de"},
+    {"key": "politico_playbook",   "name": "POLITICO Berlin Playbook",      "feed": "https://feeds.megaphone.fm/ASD3449434491", "sprache": "de"},
+    {"key": "machtwechsel",        "name": "Machtwechsel (WELT)",           "feed": "https://machtwechsel.podigee.io/feed/mp3", "sprache": "de"},
+    {"key": "restpolitics_us",     "name": "The Rest Is Politics: US",      "feed": "https://feeds.megaphone.fm/GLT5336643697", "sprache": "en"},
+    {"key": "ronzheimer",          "name": "RONZHEIMER.",                   "feed": "https://ronzheimer.podigee.io/feed/mp3", "sprache": "de"}
+  ]
+}

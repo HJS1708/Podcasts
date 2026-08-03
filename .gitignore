@@ -1,0 +1,10 @@
+# Generierte Ausgaben / Logs / Testdateien
+output/
+logs/
+*.mp3
+state.json
+__pycache__/
+*.pyc
+
+# Python
+.venv/
