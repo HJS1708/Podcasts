@@ -5,6 +5,13 @@ Fasst neue Folgen der Lieblingspodcasts (Liste in `podcasts.json`) zusammen. Abl
 `output/<datum>/episodes.json` + Transkripte in `output/<datum>/transcripts/`.
 Danach erstellt Claude daraus `output/<datum>/digest.md`. Details siehe README.md.
 
+## Kommunikation mit HJS
+**Immer auf Deutsch antworten.** Das gilt für sämtliche Antworten, Rückfragen,
+Erklärungen und Statusmeldungen – unabhängig davon, in welcher Sprache die Anfrage
+gestellt wird oder der Code kommentiert ist. Diese Regel betrifft jede Arbeit in
+diesem Projekt, nicht nur die Digest-Erstellung (dafür gilt zusätzlich die
+Sprachregel unter „Regeln").
+
 ## Aufgabe von Claude
 Aus `output/<datum>/episodes.json` (Liste der neuen Folgen mit Transkript-Pfad) **zwei**
 Dateien erstellen. Für JEDE Folge das zugehörige Transkript lesen und zusammenfassen:
