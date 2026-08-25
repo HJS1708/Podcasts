@@ -28,13 +28,20 @@ The Rest Is Politics: US (engl.), RONZHEIMER.
 - Neue Podcasts einfach als weiteren Eintrag in `podcasts.json` hinzufügen (`sprache`: de/en).
 
 ## Automatik
-Windows-Aufgabe „Podcasts - Taeglicher Digest", täglich **6:00 Uhr**, mit Nachholung
+Windows-Aufgabe „Daily Podcasts Overview", täglich **6:00 Uhr**, mit Nachholung
 bei verpasstem Start. Protokoll je Tag in `logs/`.
 
 ```powershell
-Start-ScheduledTask -TaskName "Podcasts - Taeglicher Digest"          # sofort ausführen (dauert je nach Audiomenge ~15-30 Min)
-Set-ScheduledTask   -TaskName "Podcasts - Taeglicher Digest" -Trigger (New-ScheduledTaskTrigger -Daily -At 6:30am)  # Uhrzeit ändern
-Disable-ScheduledTask -TaskName "Podcasts - Taeglicher Digest"        # pausieren
+Start-ScheduledTask -TaskName "Daily Podcasts Overview"          # sofort ausführen (dauert je nach Audiomenge ~15-30 Min)
+Set-ScheduledTask   -TaskName "Daily Podcasts Overview" -Trigger (New-ScheduledTaskTrigger -Daily -At 6:30am)  # Uhrzeit ändern
+Disable-ScheduledTask -TaskName "Daily Podcasts Overview"        # pausieren
+Get-ScheduledTaskInfo -TaskName "Daily Podcasts Overview"        # letzter Lauf, Ergebnis (0 = fehlerfrei), nächster Start
+```
+
+Aufgabe umbenannt oder nicht gefunden? Der aktuelle Name lässt sich so ermitteln:
+
+```powershell
+Get-ScheduledTask | Where-Object { $_.Actions.Arguments -like "*run_daily*" } | Select-Object TaskName, State
 ```
 
 ## Bedienung (manuell)
